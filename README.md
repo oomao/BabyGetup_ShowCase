@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="assets/banner.png" alt="BabyGetUp Banner" width="100%"/>
-</p>
-
 <h1 align="center">👶 BabyGetUp — 智慧嬰兒監護系統</h1>
 
 <p align="center">
