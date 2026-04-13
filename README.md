@@ -17,7 +17,7 @@
 </p>
 
 <p align="center">
-  <a href="https://oomao.github.io/BabyGetup_ShowCase/demo/">🌐 WAN版本線上Demo</a> •
+  <a href="https://oomao.github.io/BabyGetup_ShowCase/demo/">🌐 線上Demo</a> •
   <a href="https://play.google.com/store/apps/details?id=org.easydarwin.easypusher_ap">📱 家長端 App</a> •
   <a href="https://play.google.com/store/apps/details?id=org.easydarwin.nursemaidgetupsetting_ap">📱 小孩端 App</a>
 </p>
