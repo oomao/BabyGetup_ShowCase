@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BabyGetUp — 互動式 Demo</title>
-    <meta name="description" content="BabyGetUp 智慧嬰兒監護系統互動式展示 — 模擬 App 介面的即時體驗">
-    <link rel="icon" href="../BabyGetup_WAN/res/drawable/icon.png" type="image/png">
+    <title>BabyGetUp ??互�?�?Demo</title>
+    <meta name="description" content="BabyGetUp ?�慧嬰�???��系統互�?式�?�???模擬 App 介面?�即?��?�?>
+    <link rel="icon" href="assets/icon.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -16,17 +16,17 @@
 <div id="landing" class="landing">
     <div class="landing-bg"></div>
     <div class="landing-content">
-        <img src="../BabyGetup_WAN/res/drawable/icon.png" alt="BabyGetUp" class="landing-logo">
+        <img src="assets/icon.png" alt="BabyGetUp" class="landing-logo">
         <h1 class="landing-title">BabyGetUp</h1>
-        <p class="landing-subtitle">智慧嬰兒監護系統 — 互動式 Demo</p>
-        <p class="landing-desc">點擊下方按鈕，在模擬手機中體驗 App 介面</p>
+        <p class="landing-subtitle">?�慧嬰�???��系統 ??互�?�?Demo</p>
+        <p class="landing-desc">點�?下方?��?，在模擬?��?中�?�?App 介面</p>
         <button id="btn-start-demo" class="landing-btn" onclick="startDemo()">
             <span class="material-icons-round">phone_android</span>
-            開始體驗
+            ?��?體�?
         </button>
         <div class="landing-badges">
-            <a href="https://play.google.com/store/apps/details?id=org.easydarwin.easypusher_ap" target="_blank" class="badge-link">📱 家長端 (Google Play)</a>
-            <a href="https://play.google.com/store/apps/details?id=org.easydarwin.nursemaidgetupsetting_ap" target="_blank" class="badge-link">📱 小孩端 (Google Play)</a>
+            <a href="https://play.google.com/store/apps/details?id=org.easydarwin.easypusher_ap" target="_blank" class="badge-link">?�� 家長�?(Google Play)</a>
+            <a href="https://play.google.com/store/apps/details?id=org.easydarwin.nursemaidgetupsetting_ap" target="_blank" class="badge-link">?�� 小孩�?(Google Play)</a>
         </div>
     </div>
 </div>
@@ -50,7 +50,7 @@
             <!-- Screen: Splash -->
             <div class="screen active" id="screen-splash">
                 <div class="splash-bg">
-                    <img src="../BabyGetup_WAN/res/drawable/icon_splash.png" alt="BabyGetUp" class="splash-logo">
+                    <img src="assets/icon_splash.png" alt="BabyGetUp" class="splash-logo">
                     <div class="splash-loader"></div>
                 </div>
             </div>
@@ -58,11 +58,11 @@
             <!-- Screen: Welcome -->
             <div class="screen" id="screen-welcome">
                 <div class="welcome-bg">
-                    <img src="../BabyGetup_WAN/res/drawable/icon.png" alt="BabyGetUp" class="welcome-icon">
-                    <h2 class="welcome-title">歡迎使用 BabyGetUp</h2>
+                    <img src="assets/icon.png" alt="BabyGetUp" class="welcome-icon">
+                    <h2 class="welcome-title">歡�?使用 BabyGetUp</h2>
                     <p class="welcome-version">Rev. v3.1</p>
-                    <button class="m3-btn m3-btn-filled" onclick="navigateTo('screen-login')">登入</button>
-                    <button class="m3-btn m3-btn-elevated" onclick="navigateTo('screen-signup')">註冊</button>
+                    <button class="m3-btn m3-btn-filled" onclick="navigateTo('screen-login')">?�入</button>
+                    <button class="m3-btn m3-btn-elevated" onclick="navigateTo('screen-signup')">註�?</button>
                 </div>
             </div>
 
@@ -72,24 +72,24 @@
                     <span class="material-icons-round app-bar-back" onclick="navigateTo('screen-welcome')">arrow_back</span>
                 </div>
                 <div class="screen-body screen-body-white">
-                    <h1 class="page-title">登入</h1>
+                    <h1 class="page-title">?�入</h1>
                     <div class="form-group">
                         <div class="m3-input">
                             <span class="material-icons-round input-icon">email</span>
-                            <input type="email" placeholder="電子信箱" value="demo@babygetup.com" id="input-email">
+                            <input type="email" placeholder="?��?信箱" value="demo@babygetup.com" id="input-email">
                         </div>
                         <div class="m3-input">
                             <span class="material-icons-round input-icon">lock</span>
-                            <input type="password" placeholder="密碼" value="••••••••" id="input-password">
+                            <input type="password" placeholder="密碼" value="?�••••••�? id="input-password">
                             <span class="material-icons-round input-icon-end">visibility_off</span>
                         </div>
                         <div class="form-links">
-                            <a class="form-link">伺服器選項</a>
-                            <a class="form-link">忘記密碼</a>
+                            <a class="form-link">伺�??�選??/a>
+                            <a class="form-link">忘�?密碼</a>
                         </div>
-                        <button class="m3-btn m3-btn-filled full-width" onclick="doLogin()">登入</button>
+                        <button class="m3-btn m3-btn-filled full-width" onclick="doLogin()">?�入</button>
                         <div class="or-divider">or</div>
-                        <button class="m3-btn m3-btn-elevated full-width" onclick="navigateTo('screen-signup')">註冊</button>
+                        <button class="m3-btn m3-btn-elevated full-width" onclick="navigateTo('screen-signup')">註�?</button>
                     </div>
                 </div>
             </div>
@@ -100,29 +100,29 @@
                     <span class="material-icons-round app-bar-back" onclick="navigateTo('screen-welcome')">arrow_back</span>
                 </div>
                 <div class="screen-body screen-body-white">
-                    <h1 class="page-title">註冊帳號</h1>
+                    <h1 class="page-title">註�?帳�?</h1>
                     <div class="form-group">
                         <div class="m3-input">
                             <span class="material-icons-round input-icon">home</span>
-                            <input type="text" placeholder="家庭名稱">
+                            <input type="text" placeholder="家庭?�稱">
                         </div>
                         <div class="m3-input">
                             <span class="material-icons-round input-icon">email</span>
-                            <input type="email" placeholder="電子信箱">
+                            <input type="email" placeholder="?��?信箱">
                         </div>
                         <div class="m3-input">
                             <span class="material-icons-round input-icon">lock</span>
                             <input type="password" placeholder="密碼">
                             <span class="material-icons-round input-icon-end">visibility_off</span>
                         </div>
-                        <span class="helper-text">密碼長度至少為8個字元，必須包含英文及數字</span>
+                        <span class="helper-text">密碼?�度?��????��??��?必�??�含?��??�數�?/span>
                         <div class="m3-input">
                             <span class="material-icons-round input-icon">lock</span>
-                            <input type="password" placeholder="確認密碼">
+                            <input type="password" placeholder="確�?密碼">
                         </div>
-                        <button class="m3-btn m3-btn-filled full-width" onclick="showToast('註冊成功'); navigateTo('screen-mode-choice');">註冊</button>
+                        <button class="m3-btn m3-btn-filled full-width" onclick="showToast('註�??��?'); navigateTo('screen-mode-choice');">註�?</button>
                         <div class="or-divider">or</div>
-                        <button class="m3-btn m3-btn-elevated full-width" onclick="navigateTo('screen-login')">登入</button>
+                        <button class="m3-btn m3-btn-elevated full-width" onclick="navigateTo('screen-login')">?�入</button>
                     </div>
                 </div>
             </div>
@@ -133,15 +133,15 @@
                     <span class="material-icons-round app-bar-back" onclick="navigateTo('screen-login')">arrow_back</span>
                 </div>
                 <div class="screen-body screen-body-white" style="display:flex;flex-direction:column;align-items:center;padding-top:40px;">
-                    <h1 class="page-title">選擇模式</h1>
+                    <h1 class="page-title">?��?模�?</h1>
                     <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px;width:100%;">
                         <button class="m3-btn m3-btn-elevated mode-btn" onclick="navigateTo('screen-parent-home')">
-                            <img src="../BabyGetup_WAN/res/drawable/parents.png" class="mode-icon">
-                            家長模式
+                            <img src="assets/parents.png" class="mode-icon">
+                            家長模�?
                         </button>
                         <button class="m3-btn m3-btn-elevated mode-btn" onclick="navigateTo('screen-child-home')">
-                            <img src="../BabyGetup_WAN/res/drawable/baby.png" class="mode-icon">
-                            小孩模式
+                            <img src="assets/baby.png" class="mode-icon">
+                            小孩模�?
                         </button>
                     </div>
                 </div>
@@ -154,43 +154,43 @@
                     <span class="app-bar-title-text">BabyGetup(WAN)</span>
                 </div>
                 <div class="home-bg">
-                    <img src="../BabyGetup_WAN/res/drawable/home_background.png" alt="" class="home-bg-img">
-                    <img src="../BabyGetup_WAN/res/drawable/parents.png" alt="Parents" class="home-avatar">
+                    <img src="assets/home_background.png" alt="" class="home-bg-img">
+                    <img src="assets/parents.png" alt="Parents" class="home-avatar">
                     <button class="refresh-btn" onclick="refreshData()">
-                        <span class="material-icons-round">refresh</span> 重新整理
+                        <span class="material-icons-round">refresh</span> ?�新?��?
                     </button>
                     <div class="info-card" id="parent-info-card">
                         <div class="info-row">
-                            <img src="../BabyGetup_WAN/res/drawable/tag_bluetooth.png" class="info-icon">
-                            <span class="info-label">設備</span>
+                            <img src="assets/tag_bluetooth.png" class="info-icon">
+                            <span class="info-label">設�?</span>
                             <div class="info-values">
                                 <span class="info-value" id="parent-device">SP-Tag-001</span>
-                                <span class="info-desc" id="parent-desc">小寶的感測器</span>
+                                <span class="info-desc" id="parent-desc">小寶?��?測器</span>
                             </div>
                         </div>
                         <div class="info-divider"></div>
                         <div class="info-row">
-                            <img src="../BabyGetup_WAN/res/drawable/tag_battery.png" class="info-icon">
-                            <span class="info-label">電量</span>
+                            <img src="assets/tag_battery.png" class="info-icon">
+                            <span class="info-label">?��?</span>
                             <span class="info-value" id="parent-battery">85%</span>
                         </div>
                         <div class="info-divider"></div>
                         <div class="info-row">
-                            <img src="../BabyGetup_WAN/res/drawable/tag_temperature.png" class="info-icon">
+                            <img src="assets/tag_temperature.png" class="info-icon">
                             <span class="info-label">溫度</span>
                             <span class="info-value" id="parent-temp">36.5°C</span>
                         </div>
                         <div class="info-divider"></div>
                         <div class="info-row">
-                            <img src="../BabyGetup_WAN/res/drawable/tag_baby_state.png" class="info-icon">
-                            <span class="info-label">狀態</span>
-                            <span class="info-value status-sleep" id="parent-state">睡著</span>
+                            <img src="assets/tag_baby_state.png" class="info-icon">
+                            <span class="info-label">?�??/span>
+                            <span class="info-value status-sleep" id="parent-state">?��?</span>
                         </div>
                     </div>
                     <button class="m3-btn m3-btn-filled video-call-btn" onclick="navigateTo('screen-video-call')">
-                        <span class="material-icons-round">videocam</span> 視訊通話
+                        <span class="material-icons-round">videocam</span> 視�??�話
                     </button>
-                    <img src="../BabyGetup_WAN/res/drawable/children.png" alt="" class="home-children-img">
+                    <img src="assets/children.png" alt="" class="home-children-img">
                 </div>
                 <!-- Parent drawer -->
                 <div class="drawer-overlay" id="drawer-overlay-parent" onclick="toggleDrawer('parent')"></div>
@@ -200,14 +200,14 @@
                         <div class="drawer-email">demo@babygetup.com</div>
                     </div>
                     <div class="drawer-menu">
-                        <div class="drawer-item" onclick="showToast('個人檔案')"><span class="material-icons-round">account_circle</span>個人檔案</div>
-                        <div class="drawer-item" onclick="toggleDrawer('parent');navigateTo('screen-mode-choice')"><span class="material-icons-round">pan_tool_alt</span>模式</div>
-                        <div class="drawer-item disabled"><span class="material-icons-round">bluetooth</span>設備</div>
-                        <div class="drawer-item disabled"><span class="material-icons-round">music_note</span>影音播放設定</div>
-                        <div class="drawer-item" onclick="showToast('語言')"><span class="material-icons-round">language</span>語言</div>
-                        <div class="drawer-item" onclick="showToast('關於')"><span class="material-icons-round">info</span>關於</div>
+                        <div class="drawer-item" onclick="showToast('?�人檔�?')"><span class="material-icons-round">account_circle</span>?�人檔�?</div>
+                        <div class="drawer-item" onclick="toggleDrawer('parent');navigateTo('screen-mode-choice')"><span class="material-icons-round">pan_tool_alt</span>模�?</div>
+                        <div class="drawer-item disabled"><span class="material-icons-round">bluetooth</span>設�?</div>
+                        <div class="drawer-item disabled"><span class="material-icons-round">music_note</span>影音?�放設�?</div>
+                        <div class="drawer-item" onclick="showToast('語�?')"><span class="material-icons-round">language</span>語�?</div>
+                        <div class="drawer-item" onclick="showToast('?�於')"><span class="material-icons-round">info</span>?�於</div>
                         <div class="drawer-divider"></div>
-                        <div class="drawer-item" onclick="toggleDrawer('parent');navigateTo('screen-welcome')"><span class="material-icons-round">logout</span>登出</div>
+                        <div class="drawer-item" onclick="toggleDrawer('parent');navigateTo('screen-welcome')"><span class="material-icons-round">logout</span>?�出</div>
                     </div>
                 </div>
             </div>
@@ -219,37 +219,37 @@
                     <span class="app-bar-title-text">BabyGetup(WAN)</span>
                 </div>
                 <div class="home-bg">
-                    <img src="../BabyGetup_WAN/res/drawable/home_background.png" alt="" class="home-bg-img">
-                    <img src="../BabyGetup_WAN/res/drawable/baby.png" alt="Baby" class="home-avatar">
+                    <img src="assets/home_background.png" alt="" class="home-bg-img">
+                    <img src="assets/baby.png" alt="Baby" class="home-avatar">
                     <div class="info-card">
                         <div class="info-row">
-                            <img src="../BabyGetup_WAN/res/drawable/tag_bluetooth.png" class="info-icon">
-                            <span class="info-label">設備</span>
+                            <img src="assets/tag_bluetooth.png" class="info-icon">
+                            <span class="info-label">設�?</span>
                             <div class="info-values">
                                 <span class="info-value">SP-Tag-001</span>
-                                <span class="info-desc">小寶的感測器</span>
+                                <span class="info-desc">小寶?��?測器</span>
                             </div>
                         </div>
                         <div class="info-divider"></div>
                         <div class="info-row">
-                            <img src="../BabyGetup_WAN/res/drawable/tag_battery.png" class="info-icon">
-                            <span class="info-label">電量</span>
+                            <img src="assets/tag_battery.png" class="info-icon">
+                            <span class="info-label">?��?</span>
                             <span class="info-value" id="child-battery">85%</span>
                         </div>
                         <div class="info-divider"></div>
                         <div class="info-row">
-                            <img src="../BabyGetup_WAN/res/drawable/tag_temperature.png" class="info-icon">
+                            <img src="assets/tag_temperature.png" class="info-icon">
                             <span class="info-label">溫度</span>
                             <span class="info-value" id="child-temp">36.5°C</span>
                         </div>
                         <div class="info-divider"></div>
                         <div class="info-row">
-                            <img src="../BabyGetup_WAN/res/drawable/tag_baby_state.png" class="info-icon">
-                            <span class="info-label">狀態</span>
-                            <span class="info-value status-sleep" id="child-state">睡著</span>
+                            <img src="assets/tag_baby_state.png" class="info-icon">
+                            <span class="info-label">?�??/span>
+                            <span class="info-value status-sleep" id="child-state">?��?</span>
                         </div>
                     </div>
-                    <img src="../BabyGetup_WAN/res/drawable/children.png" alt="" class="home-children-img">
+                    <img src="assets/children.png" alt="" class="home-children-img">
                 </div>
                 <!-- Child drawer -->
                 <div class="drawer-overlay" id="drawer-overlay-child" onclick="toggleDrawer('child')"></div>
@@ -259,14 +259,14 @@
                         <div class="drawer-email">demo@babygetup.com</div>
                     </div>
                     <div class="drawer-menu">
-                        <div class="drawer-item" onclick="showToast('個人檔案')"><span class="material-icons-round">account_circle</span>個人檔案</div>
-                        <div class="drawer-item" onclick="toggleDrawer('child');navigateTo('screen-mode-choice')"><span class="material-icons-round">pan_tool_alt</span>模式</div>
-                        <div class="drawer-item" onclick="showToast('藍牙設備')"><span class="material-icons-round">bluetooth</span>設備</div>
-                        <div class="drawer-item" onclick="toggleDrawer('child');navigateTo('screen-appease')"><span class="material-icons-round">music_note</span>影音播放設定</div>
-                        <div class="drawer-item" onclick="showToast('語言')"><span class="material-icons-round">language</span>語言</div>
-                        <div class="drawer-item" onclick="showToast('關於')"><span class="material-icons-round">info</span>關於</div>
+                        <div class="drawer-item" onclick="showToast('?�人檔�?')"><span class="material-icons-round">account_circle</span>?�人檔�?</div>
+                        <div class="drawer-item" onclick="toggleDrawer('child');navigateTo('screen-mode-choice')"><span class="material-icons-round">pan_tool_alt</span>模�?</div>
+                        <div class="drawer-item" onclick="showToast('?��?設�?')"><span class="material-icons-round">bluetooth</span>設�?</div>
+                        <div class="drawer-item" onclick="toggleDrawer('child');navigateTo('screen-appease')"><span class="material-icons-round">music_note</span>影音?�放設�?</div>
+                        <div class="drawer-item" onclick="showToast('語�?')"><span class="material-icons-round">language</span>語�?</div>
+                        <div class="drawer-item" onclick="showToast('?�於')"><span class="material-icons-round">info</span>?�於</div>
                         <div class="drawer-divider"></div>
-                        <div class="drawer-item" onclick="toggleDrawer('child');navigateTo('screen-welcome')"><span class="material-icons-round">logout</span>登出</div>
+                        <div class="drawer-item" onclick="toggleDrawer('child');navigateTo('screen-welcome')"><span class="material-icons-round">logout</span>?�出</div>
                     </div>
                 </div>
             </div>
@@ -278,7 +278,7 @@
                         <div class="video-placeholder-remote">
                             <div class="video-sim-wave"></div>
                             <span class="material-icons-round" style="font-size:48px;color:rgba(255,255,255,.5)">videocam</span>
-                            <span style="color:rgba(255,255,255,.7);font-size:12px;margin-top:8px">遠端視訊畫面</span>
+                            <span style="color:rgba(255,255,255,.7);font-size:12px;margin-top:8px">?�端視�??�面</span>
                         </div>
                     </div>
                     <div class="video-local">
@@ -309,55 +309,55 @@
             <div class="screen" id="screen-appease">
                 <div class="app-bar app-bar-light">
                     <span class="material-icons-round app-bar-back" onclick="navigateTo('screen-child-home')">arrow_back</span>
-                    <span class="app-bar-title-dark">影音播放設定</span>
+                    <span class="app-bar-title-dark">影音?�放設�?</span>
                 </div>
                 <div class="screen-body screen-body-white" style="padding:16px;">
                     <div class="appease-card">
                         <div class="appease-toggle-row">
-                            <span class="appease-label">開啟</span>
+                            <span class="appease-label">?��?</span>
                             <label class="toggle-switch">
                                 <input type="checkbox" checked id="appease-toggle">
                                 <span class="toggle-slider"></span>
                             </label>
                         </div>
-                        <p class="appease-helper">當Tag偵測小孩「睡醒」或「離床」時，會自動播放預先設定好的影片或音樂</p>
+                        <p class="appease-helper">?�Tag?�測小孩?�睡?�」�??�離床」�?，�??��??�放?��?設�?好�?影�??�音�?/p>
                     </div>
                     <div class="appease-card">
                         <div class="appease-section-title">
-                            <span class="material-icons-round">music_note</span> 音樂
+                            <span class="material-icons-round">music_note</span> ?��?
                         </div>
                         <div class="media-item">
                             <span class="material-icons-round">music_note</span>
-                            <span>搖籃曲.mp3</span>
+                            <span>?��???mp3</span>
                             <span class="material-icons-round media-play">play_circle</span>
                         </div>
                         <div class="media-item">
                             <span class="material-icons-round">music_note</span>
-                            <span>安撫音樂.mp3</span>
+                            <span>安撫?��?.mp3</span>
                             <span class="material-icons-round media-play">play_circle</span>
                         </div>
                     </div>
                     <div class="appease-card">
                         <div class="appease-section-title">
-                            <span class="material-icons-round">movie</span> 影片
+                            <span class="material-icons-round">movie</span> 影�?
                         </div>
                         <div class="media-item">
                             <span class="material-icons-round">movie</span>
-                            <span>安撫動畫.mp4</span>
+                            <span>安撫?�畫.mp4</span>
                             <span class="material-icons-round media-play">play_circle</span>
                         </div>
                     </div>
                     <div class="appease-card">
                         <div class="appease-section-title">
-                            <img src="../BabyGetup_WAN/res/drawable/youtube.png" style="width:20px;height:20px"> YouTube
+                            <img src="assets/youtube.png" style="width:20px;height:20px"> YouTube
                         </div>
                         <div class="media-item">
-                            <img src="../BabyGetup_WAN/res/drawable/youtube.png" style="width:20px;height:20px">
+                            <img src="assets/youtube.png" style="width:20px;height:20px">
                             <span>Baby Shark</span>
                             <span class="material-icons-round media-play">play_circle</span>
                         </div>
-                        <button class="m3-btn m3-btn-text" style="margin-top:8px" onclick="showToast('新增 YouTube 影音')">
-                            <span class="material-icons-round">add</span> 加入Youtube影音
+                        <button class="m3-btn m3-btn-text" style="margin-top:8px" onclick="showToast('?��? YouTube 影音')">
+                            <span class="material-icons-round">add</span> ?�入Youtube影音
                         </button>
                     </div>
                 </div>
@@ -373,14 +373,14 @@
 
     <!-- Screen navigator -->
     <div class="screen-nav">
-        <button class="screen-nav-btn active" data-screen="screen-splash" onclick="quickNav('screen-splash')">啟動</button>
-        <button class="screen-nav-btn" data-screen="screen-login" onclick="quickNav('screen-login')">登入</button>
-        <button class="screen-nav-btn" data-screen="screen-signup" onclick="quickNav('screen-signup')">註冊</button>
-        <button class="screen-nav-btn" data-screen="screen-mode-choice" onclick="quickNav('screen-mode-choice')">模式</button>
-        <button class="screen-nav-btn" data-screen="screen-parent-home" onclick="quickNav('screen-parent-home')">家長主頁</button>
-        <button class="screen-nav-btn" data-screen="screen-child-home" onclick="quickNav('screen-child-home')">小孩主頁</button>
-        <button class="screen-nav-btn" data-screen="screen-video-call" onclick="quickNav('screen-video-call')">視訊</button>
-        <button class="screen-nav-btn" data-screen="screen-appease" onclick="quickNav('screen-appease')">影音設定</button>
+        <button class="screen-nav-btn active" data-screen="screen-splash" onclick="quickNav('screen-splash')">?��?</button>
+        <button class="screen-nav-btn" data-screen="screen-login" onclick="quickNav('screen-login')">?�入</button>
+        <button class="screen-nav-btn" data-screen="screen-signup" onclick="quickNav('screen-signup')">註�?</button>
+        <button class="screen-nav-btn" data-screen="screen-mode-choice" onclick="quickNav('screen-mode-choice')">模�?</button>
+        <button class="screen-nav-btn" data-screen="screen-parent-home" onclick="quickNav('screen-parent-home')">家長主�?</button>
+        <button class="screen-nav-btn" data-screen="screen-child-home" onclick="quickNav('screen-child-home')">小孩主�?</button>
+        <button class="screen-nav-btn" data-screen="screen-video-call" onclick="quickNav('screen-video-call')">視�?</button>
+        <button class="screen-nav-btn" data-screen="screen-appease" onclick="quickNav('screen-appease')">影音設�?</button>
     </div>
 
     <!-- Toast -->

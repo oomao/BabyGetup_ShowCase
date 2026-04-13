@@ -66,6 +66,24 @@
 
 ---
 
+## 💡 核心技術挑戰與突破 (Key Technical Achievements)
+
+在開發此商業級別 App 的過程中，我主導並解決了以下關鍵技術難點：
+
+### 1. 藍牙封包防抖動與精準判定 (BLE Packet Debouncing)
+為避免穿戴式裝置因外界干擾或連線不穩造成狀態誤判，我實作了**條件式緩衝機制**。系統會持續攔截並驗證封包，必須連續確認 5 個「睡醒」或「離床」的藍牙封包後，才會正式觸發推播與自動安撫媒體播放。此機制大幅過濾了雜訊，確保安撫系統的穩定性與準確率。
+
+### 2. WebRTC 複雜網路穿透與自動接聽 (NAT Traversal)
+為了讓家長能隨時一鍵查看小孩狀況，小孩端實作了**無縫背景自動接聽機制**。在 P2P 連線建立過程中，我深入處理了 SDP (Session Description Protocol) 握手與 ICE Candidate 收集流程，確保家長與小孩即使身處不同網路層（例如 4G LTE 對家用 Wi-Fi），也能透過 STUN/TURN 協定順利穿透 NAT，成功建立低延遲、高清晰度的視訊通道。
+
+### 3. Socket.IO 生命週期與斷線重連優化 (Lifecycle & Reconnection)
+Android 系統的電池最佳化常會導致背景 App 網路活動受限，造成 Socket.IO 因 Timeout 而強制斷線。為此，我在 Activity 的 `onRestart` 等生命週期回呼中，實作了精準的狀態檢測與**自動重連機制 (Auto-reconnect)**。當應用程式重新切回前台時，系統能瞬間無感恢復連線，保障了房間信令的高可用性。
+
+### 4. FCM Token 效能管理與淘汰機制 (Token Lifecycle Management)
+為解決開發測試與使用者重裝 App 導致資料庫堆積無效 FCM (Firebase Cloud Messaging) Token 的問題，我設計了**動態 Token 淘汰過濾器**。每次發起推播任務前，系統會自動核對並清理超過兩個月未活躍的無效 Token，並於 App 每次啟動時更新活躍時間戳記。這大幅減輕了資料庫的檢索負載，並消除了推播延遲的隱患。
+
+---
+
 ## 🏗️ 系統架構
 
 ### AP 模式（直連）
@@ -195,18 +213,13 @@ BabyGetup_ShowCase/
 ├── assets/                            # Banner & 媒體素材
 │   └── banner.png
 │
-├── BabyGetup_WAN/                     # WAN 版 Android 資源檔
-│   └── res/                           # Android Res（供 Demo 使用）
-│       ├── drawable/                  # 圖片與向量圖
-│       ├── layout/                    # Android Layout XML
-│       ├── menu/                      # 選單定義
-│       └── values/                    # 顏色、字串、主題
-│
 ├── demo/                              # 🌐 互動式 Live Demo
 │   ├── index.html                     # （可部署至 GitHub Pages）
 │   ├── style.css
-│   └── app.js
+│   ├── app.js
+│   └── assets/                        # UI 介面與 Icon 圖片
 │
+
 └── docs/
     ├── architecture/                  # 📊 系統架構圖
     │   ├── system-architecture.png
