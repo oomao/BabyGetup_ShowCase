@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BabyGetup(WAN)</string>
+    <string name="app_notification_name">"BabyGetup(WAN)通知"</string>
+    <string name="sinopulsar">華星科技(Sinopulsar)</string>
+    <string name="space">" "</string>
+    <string name="confirm">確定</string>
+    <string name="cancel">取消</string>
+    <string name="connect_error">無法連線至伺服器</string>
+    <string name="connect_timeout">連線逾時</string>
+    <string name="connecting">連線中…</string>
+    <string name="please_wait">請稍等</string>
+    <string name="sec">秒</string>
+    <string name="video_call_cold_down">"為求伺服器穩定，請等冷卻結束後再試"</string>
+    <string name="logout">登出</string>
+    <string name="error">錯誤</string>
+    <string name="send_verification_code_failed">驗證碼傳送失敗，請稍後再試</string>
+
+    <string name="app_description_title">App使用說明</string>
+    <string name="location_permission">位置權限：\n \t \t 當您使用 Android 12 或以上的手機時，為了能夠正確找尋到
+        您的「網路」與「Tag」，位置權限必須選擇「精確」位置！</string>
+
+    <string name="login">登入</string>
+    <string name="account_or_password_incorrect">帳號或密碼錯誤</string>
+    <string name="login_success">登入成功</string>
+    <string name="forgot_password">忘記密碼</string>
+    <string name="input_cannot_be_null">輸入不得為空</string>
+
+    <string name="sign_up">註冊</string>
+    <string name="sign_up_account">註冊帳號</string>
+    <string name="email">電子信箱</string>
+    <string name="password">密碼</string>
+    <string name="password_helper_text">密碼長度至少為8個字元，必須包含英文及數字</string>
+    <string name="family_name">家庭名稱</string>
+    <string name="password_confirmation">確認密碼</string>
+    <string name="or">or</string>
+
+    <string name="nickname_empty">請輸入暱稱</string>
+    <string name="nickname_too_many_word">暱稱長度必須小於15字</string>
+    <string name="email_empty">請輸入電子信箱</string>
+    <string name="email_format_error">電子信箱格式不符</string>
+    <string name="email_has_been_used">此電子信箱已經被指用過</string>
+    <string name="password_empty">請輸入密碼</string>
+    <string name="password_format_error">密碼必須包含一個以上的英文及數字</string>
+    <string name="password_word_count_error">密碼長度必須大於8字且小於16字</string>
+    <string name="password_confirmation_empty">請輸入確認密碼</string>
+    <string name="password_verification_failed">密碼與確認密碼不符</string>
+
+    <string name="mode_choice">選擇模式</string>
+    <string name="child_mode">小孩模式</string>
+    <string name="parent_mode">家長模式</string>
+    <string name="sign_up_success">註冊成功</string>
+
+    <string name="personal_information">個人檔案</string>
+    <string name="mode">模式</string>
+    <string name="device">設備</string>
+    <string name="appease">影音播放設定</string>
+    <string name="language">語言</string>
+    <string name="feedback">意見回饋</string>
+    <string name="about">關於</string>
+    <string name="navigation_bar">導覽列</string>
+
+    <string name="hang_up_title">結束視訊</string>
+    <string name="hang_up_content">確定要結束視訊通話？</string>
+    <string name="switch_camera">切換鏡頭</string>
+    <string name="hang_up_video_call">結束視訊通話</string>
+
+    <string name="logout_content">確定要登出？</string>
+
+    <string name="share_your_thought">分享您的體驗感受</string>
+    <string name="submit">送出</string>
+    <string name="video_conferencing">視訊</string>
+    <string name="bluetooth_module">藍牙模組</string>
+
+    <string name="about_description">說明：\n\n1. 需配合華星科技公司的藍牙模組使用。\n\n2. 欲購買藍牙模組請至上方連結到購物網站訂購。\n\n3. 當您使用 Android 12 或以上的手機時，為了能夠正確找尋到您的 Wi-Fi 與 Tag，BabyGetUp 必須選擇「精確」位置！\n</string>
+    <string name="version">Rev. v3.1</string>
+    <string name="website">Website</string>
+    <string name="facebook">Facebook</string>
+    <string name="youtube">YouTube</string>
+    <string name="twitter">Twitter</string>
+    <string name="traditional_chinese">繁體中文（台灣）</string>
+    <string name="simplified_chinese">简体中文（中国）</string>
+    <string name="english_united_states">English(United States)</string>
+
+    <string name="music">音樂</string>
+    <string name="video">影片</string>
+    <string name="start">開啟</string>
+    <string name="language_choice">選擇語言</string>
+    <string name="media_playlist">影音播放清單</string>
+
+    <string name="device_choice">選擇設備</string>
+    <string name="edit_device_description">編輯設備描述</string>
+    <string name="device_description">設備描述</string>
+
+    <string name="add">加入</string>
+
+    <string name="add_youtube_media">加入Youtube影音</string>
+    <string name="media_player">媒體播放</string>
+    <string name="youtube_media_link">影片網址</string>
+
+    <string name="add_media">新增影音</string>
+    <string name="ui">使用者介面</string>
+    <string name="speed">速度與效能</string>
+    <string name="improve_content">告訴我們需要改進的部分</string>
+    <string name="satisfy_content">對於目前的服務您滿意嗎？</string>
+    <string name="rating_experience">請評價您的經驗</string>
+    <string name="other">其他</string>
+
+    <string name="video_call">視訊通話</string>
+    <string name="mic_mute">靜音</string>
+    <string name="video_cam_off">關閉鏡頭</string>
+
+
+    <string name="oops">真糟糕！</string>
+    <string name="no_network">目前沒有網路連線</string>
+    <string name="no_network_detail">請確認您的網路</string>
+    <string name="reconnect">重新連線</string>
+    <string name="bluetooth">藍牙</string>
+    <string name="send">送出</string>
+    <string name="reset_password">重設密碼</string>
+    <string name="password_reset_successful">重設密碼成功</string>
+    <string name="reset_family_name">重設家庭名稱</string>
+    <string name="confirm_reset_password">確定重設密碼？</string>
+    <string name="password_incorrect">密碼錯誤</string>
+    <string name="warning">警告</string>
+    <string name="i_see">知道了</string>
+    <string name="status">狀態</string>
+    <string name="temperature">溫度</string>
+    <string name="battery_level">電量</string>
+    <string name="refresh">重新整理</string>
+    <string name="_00_00_00">00:00:00</string>
+    <string name="_0_kbps">0 Kbps</string>
+    <string name="no_video">手機內沒有影片</string>
+    <string name="no_music">手機內沒有音樂</string>
+    <string name="no_youtube">尚未新增 YouTube 影片</string>
+    <string name="enter_new_password">請輸入新密碼</string>
+    <string name="enter_password">請輸入密碼</string>
+    <string name="enter_verification_code">請輸入驗證碼</string>
+    <string name="bluetooth_description">為了偵測到設備，請至設定開啟藍牙功能</string>
+    <string name="appease_open_helper_text">當Tag偵測小孩「睡醒」或「離床」時，會自動播放預先設定好的影片或音樂</string>
+    <string name="media_list_helper_text">匯入YouTube影片或選擇手機內的影片MP4與音樂MP3</string>
+    <string name="no_device_available">目前無可用的設備</string>
+    <string name="forgot_password_helper_text">請輸入您先前設定的電子信箱。\n系統將會發送一封包含密碼重設的驗證碼至該郵件帳號內，請在10分鐘內使用該驗證碼完成密碼重設。</string>
+    <string name="password_has_been_changed_warning">請注意，您的密碼已經被更改，\n請聯絡使用此帳號的其他使用者。</string>
+    <string name="server_connection_failed">伺服器連線失敗</string>
+    <string name="server_connection_failed_content">BabyGetUp_WAN 無法使用，\n請稍後再試…</string>
+    <string name="out_of_bed">離床</string>
+    <string name="baby_out_of_bed">小孩離床囉！</string>
+    <string name="wake_up">睡醒</string>
+    <string name="baby_wake_up">小孩睡醒囉！</string>
+    <string name="sleep">睡著</string>
+    <string name="baby_sleep">小孩睡著囉！</string>
+    <string name="remaining">剩餘</string>
+    <string name="current_temperature">小孩目前的溫度為</string>
+    <string name="comma">，</string>
+    <string name="high_temperature">溫度過高！</string>
+    <string name="low_temperature">溫度過低！</string>
+    <string name="detect_sleep_turn_off_media_player">偵測小孩睡著，自動關閉影音</string>
+    <string name="detect_device_off_turn_off_media_player">偵測設備關閉，自動關閉影音</string>
+    <string name="detect_device_low_battery_turn_off_media_player">偵測設備電量過低，自動關閉影音</string>
+    <string name="error_occurred_video_call_connection_failed">發生錯誤，無法進行視訊通話</string>
+    <string name="no_media_playlist">尚未設定播放清單，稍後返回主畫面</string>
+    <string name="next_youtube">播放下一部 YouTube 影片</string>
+    <string name="next_media">播放下一部影音</string>
+    <string name="media_end_replay">播放完畢，稍後返回繼續輪播</string>
+    <string name="lock_back_button">影音播放中返回鎖定，等待小孩睡著會自動退回主畫面！</string>
+    <string name="cannot_use_the_previous_password">不能使用之前設置的密碼</string>
+    <string name="invalid_email_address">無效的電子郵件</string>
+    <string name="require_all_permissions">請至設定允許所有權限</string>
+    <string name="cannot_add_video">無法加入該影片，請稍後再試</string>
+    <string name="youtube_repeat">與YouTube播放清單中重複的影片</string>
+    <string name="youtube_copyright_issue">影片因為版權問題，因此無法加入此影片</string>
+    <string name="network_instability">網路不穩定，請稍後再試</string>
+    <string name="verification_code_incomplete">驗證碼輸入不完整</string>
+    <string name="verification_code_error">驗證碼輸入錯誤</string>
+</resources>

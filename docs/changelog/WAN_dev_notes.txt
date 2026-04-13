@@ -1,0 +1,20 @@
+20231209
+修改public_ip->final
+增加伺服器選項 activity_login.xml(未設定多國語言)
+添加新xml dialog_change_server.xml(未設定多國語言)
+增加showChangeServerDialog()
+添加config.java的函式
+
+20230105
+在constant.java增加KEY_SERVER_IP
+使用SharedPreferencest儲存KEY_SERVER_IP,重開不用改IP
+添加網路狀態顯示
+
+
+20230124
+小孩:傳送請求給server
+socketutil:傳送該房間並emit
+家長:收到emit並傳送該ssid給小孩
+
+20230126
+test file

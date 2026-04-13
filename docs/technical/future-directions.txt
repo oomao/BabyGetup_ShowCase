@@ -1,0 +1,6 @@
+1. WebRTC改成多人(3~4人)：目前只有家長小孩1對1。主要修改：Node.js 多人連線處理與 Android 視訊畫面分割
+2. 讓 Signaling Server(Node.js) 更穩定：可以嘗試使用 Nginx 負載平衡器串聯多台 Server，讓 209 不要過度負荷。可以搭配 Docker或許會更方便。
+3. 視訊可以轉成橫向：根據手機的方向調整視訊佈局。
+4. 改善連線品質：優化 Node.js、優化 WebRTC，微調參數或更改連線方法。
+5. 嘗試看看建置 STUN 或 TURN Server (這比較困難)
+6. 檢查 BUG

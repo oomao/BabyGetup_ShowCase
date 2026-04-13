@@ -1,0 +1,30 @@
+使用進程管理工具來確保 Node.js 應用在發生錯誤時能夠重新啟動。PM2 是一個受歡迎的進程管理工具，可以監視應用的狀態，自動重新啟動，並提供日誌和性能監控。
+!!-g為預設全域安裝，如非全域安裝的話，指令前面都要添加npx 或node_modules\.bin\pm2.cmd 
+安裝 PM2：
+npm install -g pm2
+啟動應用：
+pm2 start app.js
+停止應用:
+pm2 stop <app.js>
+查看狀態:
+pm2 list
+停止所有應用:
+pm2 stop all
+完全關閉:
+pm2 kill
+儲存狀態同步:
+pm2 save
+查看log:
+pm2 logs
+安裝windows自啟動包:
+npm install pm2-windows-startup -g
+執行命令:
+pm2-startup install
+命名開啟:
+pm2 start --name WAN app.js
+
+//暫無需使用
+開機自動啟動(linux ubunto):
+pm2 startup
+重新啟動之前存的過程(windows):
+pm2 resurrect

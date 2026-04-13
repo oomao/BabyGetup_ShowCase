@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:padding="@dimen/_15sdp">
+
+    <TextView
+        android:id="@+id/tv_family_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Header"
+        android:textSize="@dimen/_18sdp" />
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subtitle"
+        android:textSize="@dimen/_12sdp" />
+
+</LinearLayout>
+
+<!--<com.google.android.material.divider.MaterialDivider
+        style="@style/Widget.MaterialComponents.MaterialDivider"
+        android:layout_marginVertical="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.Material3.Button.TextButton.Icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/personal_information"
+        android:textAlignment="textStart"
+        app:iconPadding="@dimen/_10sdp"
+        android:textColor="@color/black"
+        app:icon="@drawable/ic_outline_account_circle" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.Material3.Button.TextButton.Icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bluetooth"
+        android:textAlignment="textStart"
+        app:iconPadding="@dimen/_10sdp"
+        android:textColor="@color/black"
+        app:icon="@drawable/ic_round_bluetooth" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.Material3.Button.TextButton.Icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/music"
+        android:textAlignment="textStart"
+        app:iconPadding="@dimen/_10sdp"
+        android:textColor="@color/black"
+        app:icon="@drawable/ic_round_bluetooth" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.Material3.Button.TextButton.Icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/language"
+        android:textAlignment="textStart"
+        app:iconPadding="@dimen/_10sdp"
+        android:textColor="@color/black"
+        app:icon="@drawable/ic_outline_language" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.Material3.Button.TextButton.Icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/feedback"
+        android:textAlignment="textStart"
+        app:iconPadding="@dimen/_10sdp"
+        android:textColor="@color/black"
+        app:icon="@drawable/ic_outline_feedback" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.Material3.Button.TextButton.Icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/about"
+        android:textAlignment="textStart"
+        app:iconPadding="@dimen/_10sdp"
+        android:textColor="@color/black"
+        app:icon="@drawable/ic_outline_info" />
+
+    <com.google.android.material.divider.MaterialDivider
+        style="@style/Widget.MaterialComponents.MaterialDivider"
+        android:layout_marginVertical="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.Material3.Button.TextButton.Icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/logout"
+        android:textAlignment="textStart"
+        app:iconPadding="@dimen/_10sdp"
+        android:textColor="@color/black"
+        app:icon="@drawable/ic_round_logout" />
+-->

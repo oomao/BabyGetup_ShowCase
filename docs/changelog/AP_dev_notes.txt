@@ -1,0 +1,14 @@
+20231209
+Startcount()  WetnessListener
+Newpackage  equal 6
+BluetoothAdapter.LeScanCallback leScanDeviceCallback
+
+Api33->34   gradle
+加入六號封包濕度,呼吸ChildWaitingActivity
+加入溫度，濕度,呼吸顯示activity_child_waiting.xml
+溫度->°C,濕度->%,呼吸->bpm
+溫度,濕度,呼吸可以顯示多國語言strings.xml
+v2.4->v3.0
+
+
+api34 相片影片權限

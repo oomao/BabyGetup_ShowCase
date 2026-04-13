@@ -1,0 +1,6 @@
+檔案位置:
+D:\108級專題\BabyGetUp_WAN\NodeJS\start_signaling_server.bat
+
+
+開機啟動:
+C:\Users\nuuim\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\start_signaling_server.bat

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    tools:context=".parent.ui.activities.ParentVideoCallActivity">
+
+    <org.webrtc.SurfaceViewRenderer
+        android:id="@+id/svr_remote"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/loading_background_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:gravity="center" >
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/cpi_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" />
+    </LinearLayout>
+
+    <!--    <androidx.cardview.widget.CardView-->
+    <!--        android:id="@+id/cv_surface_local"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="@dimen/_12sdp"-->
+    <!--        android:layout_marginTop="@dimen/_12sdp"-->
+    <!--        app:cardCornerRadius="@dimen/_15sdp"-->
+    <!--        app:cardPreventCornerOverlap="false"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent">-->
+
+    <!--    </androidx.cardview.widget.CardView>-->
+
+    <org.webrtc.SurfaceViewRenderer
+        android:id="@+id/svr_local"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:backgroundTint="@color/blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/fl_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:background="@drawable/round_background"
+        android:padding="6dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fl_video_call_duration"
+        app:layout_constraintEnd_toStartOf="@id/fl_video_call_duration"
+        app:layout_constraintTop_toTopOf="@+id/fl_video_call_duration">
+
+        <TextView
+            android:id="@+id/tv_network_rate"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textSize="@dimen/_10sdp"
+            android:text="@string/_0_kbps" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_video_call_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:background="@drawable/round_background"
+        android:padding="6dp"
+        app:layout_constraintBottom_toBottomOf="@+id/siv_switch_camera"
+        app:layout_constraintEnd_toStartOf="@+id/siv_switch_camera"
+        app:layout_constraintTop_toTopOf="@+id/siv_switch_camera">
+
+        <TextView
+            android:id="@+id/tv_video_call_duration"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textSize="@dimen/_10sdp"
+            android:text="@string/_00_00_00" />
+    </FrameLayout>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/siv_switch_camera"
+        style="?attr/floatingActionButtonSmallPrimaryStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_12sdp"
+        android:backgroundTint="@android:color/transparent"
+        android:contentDescription="@string/switch_camera"
+        android:src="@drawable/ic_outline_flip_camera_light"
+        app:elevation="@dimen/_30sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/white" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_hang_up"
+        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:backgroundTint="@color/red"
+        android:contentDescription="@string/hang_up_video_call"
+        android:scaleType="center"
+        android:src="@drawable/ic_round_call_end_light"
+        app:elevation="@dimen/_30sdp"
+        app:fabCustomSize="@dimen/_40sdp"
+        app:layout_constraintStart_toEndOf="@id/fab_camera"
+        app:layout_constraintTop_toTopOf="@id/fab_camera"
+        app:layout_constraintBottom_toBottomOf="@id/fab_camera"
+        app:tint="@color/white" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_microphone"
+        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:backgroundTint="@color/blue"
+        android:contentDescription="@string/mic_mute"
+        android:src="@drawable/ic_round_mic_light"
+        android:scaleType="center"
+        app:elevation="@dimen/_30sdp"
+        app:fabCustomSize="@dimen/_40sdp"
+        app:layout_constraintEnd_toStartOf="@id/fab_camera"
+        app:layout_constraintTop_toTopOf="@id/fab_camera"
+        app:layout_constraintBottom_toBottomOf="@id/fab_camera"
+        app:tint="@color/white" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_camera"
+        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:backgroundTint="@color/blue"
+        android:src="@drawable/ic_round_videocam_light"
+        android:contentDescription="@string/video_cam_off"
+        android:scaleType="center"
+        app:elevation="@dimen/_30sdp"
+        app:fabCustomSize="@dimen/_40sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tint="@color/white" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
